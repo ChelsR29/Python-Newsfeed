@@ -13,7 +13,7 @@ def index():
   return render_template(
     'homepage.html',
     posts=posts,
-  loggedIn=session.get('loggedIn')
+    loggedIn=session.get('loggedIn')
   )
 
 @bp.route('/login')
